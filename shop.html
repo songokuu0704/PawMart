@@ -1,0 +1,554 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | PawMart</title>
+    <link rel="stylesheet" href="style.css">
+</head><body><header>
+    <div class="logo">🐾 PawMart</div><div class="tagline">
+    Smart Products. Happier Pets.
+</div>
+
+<div class="header-actions">
+    🔍 &nbsp; 👤 &nbsp;
+    <a href="cart.html">
+        🛒 Cart (<span id="cart-count">0</span>)
+    </a>
+</div>
+
+</header><nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="shop.html?category=cats">Cats</a>
+    <a href="shop.html?category=dogs">Dogs</a>
+    <a href="shop.html?category=grooming">Grooming</a>
+    <a href="shop.html?category=toys">Toys</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</nav><main><section class="section">
+
+    <div class="section-title">
+        <p>PAWMART STORE</p>
+        <h1>Shop All Products</h1>
+        <span>
+            Discover innovative products designed for happier pets.
+        </span>
+    </div>
+
+
+    <!-- CATEGORY FILTERS -->
+
+    <div class="shop-filters">
+
+        <button onclick="filterProducts('all')">
+            All
+        </button>
+
+        <button onclick="filterProducts('cats')">
+            Cats
+        </button>
+
+        <button onclick="filterProducts('dogs')">
+            Dogs
+        </button>
+
+        <button onclick="filterProducts('grooming')">
+            Grooming
+        </button>
+
+        <button onclick="filterProducts('toys')">
+            Toys
+        </button>
+
+        <button onclick="filterProducts('feeding')">
+            Feeding
+        </button>
+
+        <button onclick="filterProducts('comfort')">
+            Comfort
+        </button>
+
+        <button onclick="filterProducts('travel')">
+            Travel
+        </button>
+
+    </div>
+
+
+    <!-- PRODUCTS -->
+
+    <div class="products">
+
+
+        <!-- 1 -->
+
+        <div class="product shop-product" data-category="feeding">
+
+            <div class="product-image">
+                <img
+                    src="images/pawbowl.jpg"
+                    alt="PawBowl Smart Feeder"
+                    style="width:100%; height:100%; object-fit:contain;"
+                >
+            </div>
+
+            <p>FEEDING</p>
+
+            <h3>PawBowl Smart Feeder</h3>
+
+            <span>
+                Portion-controlled feeding designed for convenient everyday meals.
+            </span>
+
+            <h3>₹2,499</h3>
+
+            <a href="product.html?id=pawbowl">
+                View Details
+            </a>
+
+        </div>
+
+
+        <!-- 2 -->
+
+        <div class="product shop-product" data-category="feeding">
+
+            <div class="product-image">
+                <img
+                    src="images/water-fountain.jpg"
+                    alt="PawClean Water Fountain"
+                    style="width:100%; height:100%; object-fit:contain;"
+                >
+            </div>
+
+            <p>HYDRATION</p>
+
+            <h3>PawClean Water Fountain</h3>
+
+            <span>
+                Continuous filtered-flow drinking system for everyday hydration.
+            </span>
+
+            <h3>₹1,999</h3>
+
+            <a href="product.html?id=water-fountain">
+                View Details
+            </a>
+
+        </div>
+
+
+        <!-- 3 -->
+
+        <div class="product shop-product" data-category="cats">
+
+            <div class="product-image">
+                <img
+                    src="images/motion-ball.jpg"
+                    alt="PurrPlay Motion Ball"
+                    style="width:100%; height:100%; object-fit:contain;"
+                >
+            </div>
+
+            <p>TOYS</p>
+
+            <h3>PurrPlay Motion Ball</h3>
+
+            <span>
+                Interactive motion designed to keep indoor cats engaged.
+            </span>
+
+            <h3>₹899</h3>
+
+            <a href="product.html?id=motion-ball">
+                View Details
+            </a>
+
+        </div>
+
+
+        <!-- 4 -->
+
+        <div class="product shop-product" data-category="toys">
+
+            <div class="product-image">
+                <img
+                    src="images/puzzle-feeder.jpg"
+                    alt="TreatMate Puzzle Feeder"
+                    style="width:100%; height:100%; object-fit:contain;"
+                >
+            </div>
+
+            <p>TOYS</p>
+
+            <h3>TreatMate Puzzle Feeder</h3>
+
+            <span>
+                Makes pets work and play while enjoying their favourite treats.
+            </span>
+
+            <h3>₹1,099</h3>
+
+            <a href="product.html?id=puzzle-feeder">
+                View Details
+            </a>
+
+        </div>
+
+
+        <!-- 5 -->
+
+        <div class="product shop-product" data-category="cats">
+
+            <div class="product-image">
+                <img
+                    src="images/play-tunnel.jpg"
+                    alt="PurrHide Play Tunnel"
+                    style="width:100%; height:100%; object-fit:contain;"
+                >
+            </div>
+
+            <p>TOYS</p>
+
+            <h3>PurrHide Play Tunnel</h3>
+
+            <span>
+                Foldable interactive indoor tunnel for playful exploration.
+            </span>
+
+            <h3>₹1,299</h3>
+
+            <a href="product.html?id=play-tunnel">
+                View Details
+            </a>
+
+        </div>
+
+
+        <!-- 6 -->
+
+        <div class="product shop-product" data-category="grooming">
+
+            <div class="product-image">
+                <img
+                    src="images/grooming-brush.jpg"
+                    alt="PawFresh Grooming Brush"
+                    style="width:100%; height:100%; object-fit:contain;"
+                >
+            </div>
+
+            <p>GROOMING</p>
+
+            <h3>PawFresh Grooming Brush</h3>
+
+            <span>
+                Everyday grooming with an integrated fur-collection chamber.
+            </span>
+
+            <h3>₹799</h3>
+
+            <a href="product.html?id=grooming-brush">
+                View Details
+            </a>
+
+        </div>
+
+
+        <!-- 7 -->
+
+        <div class="product shop-product" data-category="grooming">
+
+            <div class="product-image">
+                <img
+                    src="images/nail-clipper.jpg"
+                    alt="PawTrim Nail Clipper"
+                    style="width:100%; height:100%; object-fit:contain;"
+                >
+            </div>
+
+            <p>GROOMING</p>
+
+            <h3>PawTrim Nail Clipper</h3>
+
+            <span>
+                Pet-focused nail-trimming design for simple grooming routines.
+            </span>
+
+            <h3>₹499</h3>
+
+            <a href="product.html?id=nail-clipper">
+                View Details
+            </a>
+
+        </div>
+
+
+        <!-- 8 -->
+
+        <div class="product shop-product" data-category="grooming">
+
+            <div class="product-image">
+                <img
+                    src="images/pet-shampoo.jpg"
+                    alt="PawGlow Pet Shampoo"
+                    style="width:100%; height:100%; object-fit:contain;"
+                >
+            </div>
+
+            <p>GROOMING</p>
+
+            <h3>PawGlow Pet Shampoo</h3>
+
+            <span>
+                Gentle everyday pet-care formula designed for routine grooming.
+            </span>
+
+            <h3>₹699</h3>
+
+            <a href="product.html?id=pet-shampoo">
+                View Details
+            </a>
+
+        </div>
+
+
+        <!-- 9 -->
+
+        <div class="product shop-product" data-category="grooming">
+
+            <div class="product-image">
+                <img
+                    src="images/quick-dry-towel.jpg"
+                    alt="PawDry Quick-Dry Towel"
+                    style="width:100%; height:100%; object-fit:contain;"
+                >
+            </div>
+
+            <p>GROOMING</p>
+
+            <h3>PawDry Quick-Dry Towel</h3>
+
+            <span>
+                High-absorption quick-drying design for post-bath care.
+            </span>
+
+            <h3>₹599</h3>
+
+            <a href="product.html?id=quick-dry-towel">
+                View Details
+            </a>
+
+        </div>
+
+
+        <!-- 10 -->
+
+        <div class="product shop-product" data-category="grooming">
+
+            <div class="product-image">
+                <img
+                    src="images/ear-kit.jpg"
+                    alt="PawCare Ear Kit"
+                    style="width:100%; height:100%; object-fit:contain;"
+                >
+            </div>
+
+            <p>GROOMING</p>
+
+            <h3>PawCare Ear Kit</h3>
+
+            <span>
+                Dedicated basic ear-care kit for everyday pet grooming routines.
+            </span>
+
+            <h3>₹649</h3>
+
+            <a href="product.html?id=ear-kit">
+                View Details
+            </a>
+
+        </div>
+
+
+        <!-- 11 -->
+
+        <div class="product shop-product" data-category="comfort">
+
+            <div class="product-image">
+                <img
+                    src="images/comfort-mat.jpg"
+                    alt="CoolPaws Comfort Mat"
+                    style="width:100%; height:100%; object-fit:contain;"
+                >
+            </div>
+
+            <p>COMFORT</p>
+
+            <h3>CoolPaws Comfort Mat</h3>
+
+            <span>
+                Reusable cooling surface designed for comfortable rest.
+            </span>
+
+            <h3>₹1,499</h3>
+
+            <a href="product.html?id=comfort-mat">
+                View Details
+            </a>
+
+        </div>
+
+
+        <!-- 12 -->
+
+        <div class="product shop-product" data-category="comfort">
+
+            <div class="product-image">
+                <img
+                    src="images/premium-bed.jpg"
+                    alt="PawRest Premium Bed"
+                    style="width:100%; height:100%; object-fit:contain;"
+                >
+            </div>
+
+            <p>COMFORT</p>
+
+            <h3>PawRest Premium Bed</h3>
+
+            <span>
+                Comfortable washable bed designed for everyday relaxation.
+            </span>
+
+            <h3>₹2,999</h3>
+
+            <a href="product.html?id=premium-bed">
+                View Details
+            </a>
+
+        </div>
+
+
+        <!-- 13 -->
+
+        <div class="product shop-product" data-category="dogs">
+
+            <div class="product-image">
+                <img
+                    src="images/smart-collar.jpg"
+                    alt="PawTrack Smart Collar"
+                    style="width:100%; height:100%; object-fit:contain;"
+                >
+            </div>
+
+            <p>ACCESSORIES</p>
+
+            <h3>PawTrack Smart Collar</h3>
+
+            <span>
+                Location and activity-monitoring concept for modern pet parents.
+            </span>
+
+            <h3>₹1,799</h3>
+
+            <a href="product.html?id=smart-collar">
+                View Details
+            </a>
+
+        </div>
+
+
+        <!-- 14 -->
+
+        <div class="product shop-product" data-category="travel">
+
+            <div class="product-image">
+                <img
+                    src="images/car-seat.jpg"
+                    alt="PawShield Car Seat"
+                    style="width:100%; height:100%; object-fit:contain;"
+                >
+            </div>
+
+            <p>TRAVEL</p>
+
+            <h3>PawShield Car Seat</h3>
+
+            <span>
+                Dedicated pet travel and safety seat for journeys by car.
+            </span>
+
+            <h3>₹2,499</h3>
+
+            <a href="product.html?id=car-seat">
+                View Details
+            </a>
+
+        </div>
+
+
+        <!-- 15 -->
+
+        <div class="product shop-product" data-category="travel">
+
+            <div class="product-image">
+                <img
+                    src="images/travel-bottle.jpg"
+                    alt="PawEase Travel Bottle"
+                    style="width:100%; height:100%; object-fit:contain;"
+                >
+            </div>
+
+            <p>TRAVEL</p>
+
+            <h3>PawEase Travel Bottle</h3>
+
+            <span>
+                Portable water bottle designed for pets on the go.
+            </span>
+
+            <h3>₹899</h3>
+
+            <a href="product.html?id=travel-bottle">
+                View Details
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main><footer><div>
+    <h2>🐾 PawMart</h2>
+    <p>Smart Products. Happier Pets.</p>
+    <p>Innovative products for better everyday pet care.</p>
+</div>
+
+<div>
+    <h3>Shop</h3>
+    <a href="shop.html">All Products</a>
+    <a href="shop.html?category=cats">Cats</a>
+    <a href="shop.html?category=dogs">Dogs</a>
+    <a href="shop.html?category=grooming">Grooming</a>
+    <a href="shop.html?category=toys">Toys</a>
+</div>
+
+<div>
+    <h3>Help</h3>
+    <a href="contact.html">Contact Us</a>
+    <a href="#">Shipping</a>
+    <a href="#">Returns</a>
+    <a href="#">FAQs</a>
+</div>
+
+<div>
+    <h3>Connect</h3>
+    <a href="#">Instagram</a>
+    <a href="#">Email</a>
+    <a href="#">Phone</a>
+</div>
+
+</footer><div class="copyright">
+    © 2026 PawMart. All Rights Reserved. 🐾
+</div><script src="script.js"></script></body>
+</html>

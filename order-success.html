@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Order Confirmed | PawMart</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="header">
+
+    <div class="logo">
+        🐾 PawMart
+    </div>
+
+    <div class="tagline">
+        Smart Products. Happier Pets.
+    </div>
+
+    <div class="header-icons">
+
+        <span>🔍</span>
+
+        <span>👤</span>
+
+        <span>
+            🛒
+            <span id="cart-count">0</span>
+        </span>
+
+    </div>
+
+</header>
+
+
+
+<nav class="navbar">
+
+    <a href="index.html">Home</a>
+
+    <a href="shop.html">Shop</a>
+
+    <a href="shop.html?category=cats">Cats</a>
+
+    <a href="shop.html?category=dogs">Dogs</a>
+
+    <a href="shop.html?category=grooming">Grooming</a>
+
+    <a href="shop.html?category=toys">Toys</a>
+
+    <a href="about.html">About</a>
+
+    <a href="contact.html">Contact</a>
+
+</nav>
+
+
+
+<main class="success-page">
+
+
+    <section class="success-container">
+
+
+        <div class="success-visual">
+    <div class="success-icon">✓</div>
+    <span class="confetti c1">✦</span>
+    <span class="confetti c2">✦</span>
+    <span class="confetti c3">•</span>
+    <span class="confetti c4">✦</span>
+    <span class="confetti c5">•</span>
+</div>
+
+
+        <p class="small-title">
+            PAWMART
+        </p>
+
+
+        <h1>
+            Order Confirmed!
+        </h1>
+
+
+        <p class="success-message">
+            Thank you for shopping with PawMart.
+            Your order has been successfully placed.
+        </p>
+
+
+
+        <div class="order-details">
+
+
+            <div class="order-detail-row">
+
+                <span>
+                    Order ID
+                </span>
+
+                <strong id="success-order-id">
+                    Loading...
+                </strong>
+
+            </div>
+
+
+
+            <div class="order-detail-row">
+
+                <span>
+                    Status
+                </span>
+
+                <strong id="success-status">
+                    Confirmed
+                </strong>
+
+            </div>
+
+
+
+            <div class="order-detail-row">
+
+                <span>
+                    Customer
+                </span>
+
+                <strong id="success-customer">
+                    Loading...
+                </strong>
+
+            </div>
+
+
+
+            <div class="order-detail-row">
+
+                <span>
+                    Payment
+                </span>
+
+                <strong id="success-payment">
+                    Loading...
+                </strong>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="success-actions">
+
+            <a
+                href="shop.html"
+                class="buy-button"
+            >
+                Continue Shopping
+            </a>
+
+
+            <a
+                href="index.html"
+                class="secondary-button"
+            >
+                Return to Homepage
+            </a>
+
+        </div>
+
+
+    </section>
+
+
+</main>
+
+
+
+<footer class="footer">
+
+
+    <div>
+
+        <h3>
+            🐾 PawMart
+        </h3>
+
+        <p>
+            Smart Products. Happier Pets.
+        </p>
+
+    </div>
+
+
+
+    <div>
+
+        <h4>
+            Quick Links
+        </h4>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="shop.html">
+            Shop
+        </a>
+
+        <a href="about.html">
+            About
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+    </div>
+
+
+
+    <div>
+
+        <h4>
+            Customer Care
+        </h4>
+
+        <p>
+            Easy Shopping
+        </p>
+
+        <p>
+            Pet First Products
+        </p>
+
+        <p>
+            Quality Focused
+        </p>
+
+    </div>
+
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
+
+
+<script>
+
+
+const orderId =
+    localStorage.getItem("pawmartOrderId")
+    || "N/A";
+
+
+const orderStatus =
+    localStorage.getItem("pawmartOrderStatus")
+    || "Confirmed";
+
+
+const customer =
+    JSON.parse(
+        localStorage.getItem("pawmartCustomer")
+    )
+    || {};
+
+
+
+document.getElementById(
+    "success-order-id"
+).textContent = orderId;
+
+
+
+document.getElementById(
+    "success-status"
+).textContent = orderStatus;
+
+
+
+document.getElementById(
+    "success-customer"
+).textContent =
+    customer.name || "Customer";
+
+
+
+document.getElementById(
+    "success-payment"
+).textContent =
+    customer.payment || "UPI";
+
+
+
+</script>
+
+
+</body>
+
+</html>

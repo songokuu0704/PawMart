@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product | PawMart</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">🐾 PawMart</div>
+
+    <div class="tagline">
+        Smart Products. Happier Pets.
+    </div>
+
+    <div class="header-actions">
+        🔍 &nbsp; 👤 &nbsp;
+        <a href="cart.html">
+            🛒 Cart (<span id="cart-count">0</span>)
+        </a>
+    </div>
+
+</header>
+
+
+<nav>
+
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="shop.html?category=cats">Cats</a>
+    <a href="shop.html?category=dogs">Dogs</a>
+    <a href="shop.html?category=grooming">Grooming</a>
+    <a href="shop.html?category=toys">Toys</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+
+</nav>
+
+
+<main>
+
+<section class="product-detail">
+
+
+    <div class="detail-image">
+
+        <img
+            id="product-image"
+            src=""
+            alt="Product Image"
+        >
+
+    </div>
+
+
+    <div class="detail-info">
+
+
+        <p class="small-title" id="product-category">
+            PAWMART PRODUCT
+        </p>
+
+
+        <h1 id="product-name">
+            Product Name
+        </h1>
+
+
+        <div class="detail-rating">
+            ★★★★★ <span>4.8/5</span>
+        </div>
+
+
+        <h2 id="product-price">
+            ₹0
+        </h2>
+
+
+        <p id="product-description">
+            Discover a thoughtfully designed PawMart product
+            created to make everyday pet care easier.
+        </p>
+
+
+
+        <div class="features">
+
+            <h3>Key Features</h3>
+
+            <ul id="product-features">
+
+                <li>
+                    Thoughtfully designed for everyday use
+                </li>
+
+                <li>
+                    Pet-friendly design
+                </li>
+
+                <li>
+                    Easy and convenient to use
+                </li>
+
+            </ul>
+
+        </div>
+
+
+
+        <div class="pet-type">
+
+            <strong>Designed for:</strong>
+
+            <span id="product-pet-type">
+                Cats & Dogs
+            </span>
+
+        </div>
+
+
+
+        <div class="quantity-area">
+
+            <label for="quantity">
+                Quantity
+            </label>
+
+
+            <div class="quantity-control">
+
+                <button onclick="changeQuantity(-1)">
+                    −
+                </button>
+
+
+                <span id="quantity">
+                    1
+                </span>
+
+
+                <button onclick="changeQuantity(1)">
+                    +
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="product-actions">
+
+            <button
+                class="button"
+                onclick="addCurrentProductToCart()"
+            >
+                Add to Cart
+            </button>
+
+
+            <button
+                class="buy-button"
+                onclick="buyNow()"
+            >
+                Buy Now
+            </button>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<footer>
+
+
+    <div>
+
+        <h2>🐾 PawMart</h2>
+
+        <p>
+            Smart Products. Happier Pets.
+        </p>
+
+        <p>
+            Innovative products for better everyday pet care.
+        </p>
+
+    </div>
+
+
+
+    <div>
+
+        <h3>Shop</h3>
+
+        <a href="shop.html">
+            All Products
+        </a>
+
+        <a href="shop.html?category=cats">
+            Cats
+        </a>
+
+        <a href="shop.html?category=dogs">
+            Dogs
+        </a>
+
+        <a href="shop.html?category=grooming">
+            Grooming
+        </a>
+
+        <a href="shop.html?category=toys">
+            Toys
+        </a>
+
+    </div>
+
+
+
+    <div>
+
+        <h3>Help</h3>
+
+        <a href="contact.html">
+            Contact Us
+        </a>
+
+        <a href="#">
+            Shipping
+        </a>
+
+        <a href="#">
+            Returns
+        </a>
+
+        <a href="#">
+            FAQs
+        </a>
+
+    </div>
+
+
+
+    <div>
+
+        <h3>Connect</h3>
+
+        <a href="#">
+            Instagram
+        </a>
+
+        <a href="#">
+            Email
+        </a>
+
+        <a href="#">
+            Phone
+        </a>
+
+    </div>
+
+
+</footer>
+
+
+
+<div class="copyright">
+
+    © 2026 PawMart. All Rights Reserved. 🐾
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
